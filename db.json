@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "name": "Binx",
+      "age": "7 years",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "Thuma",
+      "age": "4 years"
+    },
+    {
+      "id": 10,
+      "name": "Lucy",
+      "age": "10 years"
+    },
+    {
+      "name": "Lilly",
+      "age": "8 years",
+      "id": 11
+    }
+  ]
+}

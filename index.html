@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!--Wanted to make a database for cats at a cat cafe-->
+    <nav class="navbar bg-success">
+        <div class="container-fluid">
+          <span class="navbar-brand mx-auto mb-0 fs-1">Cat Cafe Roster</span>
+        </div>
+      </nav>
+         
+
+<!--Main container and form-->
+    <main class="container my-4">
+      <form id="catForm">
+        <h3>Add a Cat</h3>
+        <div class="mb-3">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="titleHelp">
+        </div>
+        <div class="mb-3">
+          <label for="Age" class="form-label">Age</label>
+          <input type="text" class="form-control" id="age">
+        </div>
+        <button type="submit" class="btn btn-success">Add</button>
+      </form>
+      <hr>
+      <!--So we can update any kitties(data)-->
+      <form id="updateForm">
+        <h3>Update a Cat</h3>
+        <div class="mb-3">
+          <label for="updateId" class="form-label">ID</label>
+          <input type="text" class="form-control" id="updateId">
+        </div>
+        <div class="mb-3">
+          <label for="updateName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="updateName">
+        </div>
+        <div class="mb-3">
+          <label for="updateAge" class="form-label">Age</label>
+          <input type="text" class="form-control" id="updateAge">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <!--Where all the input data will go-->
+      <hr>
+      <div id="cat-content"></div>
+    </main>
+
+
+   
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

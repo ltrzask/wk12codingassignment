@@ -1,0 +1,13 @@
+#cat-content {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+
+.info-box {
+    background-color: #8ac07e;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: 600;
+}
